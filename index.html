@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Islam Fadl — CV / Robotics Perception Engineer</title>
+<meta name="description" content="Senior CV / Robotics Perception Engineer. Multimodal perception, edge AI, sensor fusion. MSc Control Engineering, University of Bremen. Published VISAPP 2025.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ── RESET & BASE ──────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #F7F4EF;
+  --white: #FFFFFF;
+  --ink: #1A1814;
+  --ink-soft: #3D3A35;
+  --ink-muted: #7A766E;
+  --ink-faint: #B5B0A8;
+  --accent: #1B4FD8;
+  --accent-light: #EEF2FF;
+  --accent-hover: #1340B8;
+  --teal: #0D7B6B;
+  --teal-light: #E6F4F1;
+  --border: #E5E0D8;
+  --border-soft: #EDE9E3;
+  --shadow-sm: 0 1px 3px rgba(26,24,20,0.06), 0 1px 2px rgba(26,24,20,0.04);
+  --shadow-md: 0 4px 16px rgba(26,24,20,0.08), 0 2px 6px rgba(26,24,20,0.04);
+  --shadow-lg: 0 12px 40px rgba(26,24,20,0.10), 0 4px 12px rgba(26,24,20,0.06);
+  --radius: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --max-w: 860px;
+  --nav-h: 60px;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── SCROLLBAR ─────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* ── NAVIGATION ────────────────────────────────────────────── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: var(--nav-h);
+  background: rgba(247,244,239,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center;
+}
+
+.nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 18px;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+/* ── HERO ──────────────────────────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--nav-h) + 60px) 24px 80px;
+}
+
+.hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--accent);
+}
+
+h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+
+h1 em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero-tagline {
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  max-width: 480px;
+  margin-bottom: 32px;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  background: var(--white);
+  white-space: nowrap;
+}
+
+.badge-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+  flex-shrink: 0;
+}
+
+.badge-dot.blue { background: var(--accent); }
+.badge-dot.orange { background: #D97706; }
+
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  background: var(--accent);
+  color: white;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  background: var(--white);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  border-color: var(--ink-muted);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Photo */
+.hero-photo-wrap {
+  position: relative;
+}
+
+.hero-photo {
+  width: 400px; 
+  height: 600px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  display: block;
+  box-shadow: var(--shadow-lg);
+  border: 3px solid var(--white);
+}
+
+.hero-photo-placeholder {
+  width: 400px; 
+  height: 600px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--accent-light) 0%, var(--teal-light) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  border: 3px solid var(--white);
+}
+
+.photo-initials {
+  font-family: 'DM Serif Display', serif;
+  font-size: 48px;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.photo-label {
+  font-size: 11px;
+  color: var(--ink-muted);
+  margin-top: 8px;
+  text-align: center;
+}
+
+.status-pill {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 5px 14px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--teal);
+  white-space: nowrap;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* ── SECTIONS ──────────────────────────────────────────────── */
+section {
+  padding: 96px 24px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-label::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 1px;
+  background: var(--accent);
+}
+
+h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.section-intro {
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  max-width: 560px;
+  margin-bottom: 48px;
+}
+
+/* Divider between sections */
+.section-divider {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  height: 1px;
+  background: var(--border-soft);
+}
+
+/* ── ABOUT ─────────────────────────────────────────────────── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.about-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.about-card-icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.about-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.about-card p {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.skill-group {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+}
+
+.skill-group-title {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 10px;
+  font-family: 'DM Mono', monospace;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skill-tag {
+  font-size: 11px;
+  padding: 2px 8px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--ink-soft);
+}
+
+/* ── PROJECTS ──────────────────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.project-card:hover::before { transform: scaleX(1); }
+
+.project-card.flagship::before { background: var(--teal); transform: scaleX(1); }
+.project-card.flagship { border-color: rgba(13,123,107,0.2); }
+
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 100px;
+  margin-bottom: 14px;
+  font-family: 'DM Mono', monospace;
+}
+
+.status-shipped { background: #D1FAE5; color: #065F46; }
+.status-progress { background: #DBEAFE; color: #1E40AF; }
+.status-queued { background: var(--border-soft); color: var(--ink-muted); }
+.status-flagship { background: var(--teal-light); color: var(--teal); }
+
+.project-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.project-card p {
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.project-tag {
+  font-size: 10px;
+  font-family: 'DM Mono', monospace;
+  padding: 2px 7px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--ink-muted);
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent);
+  margin-top: 14px;
+  text-decoration: none;
+}
+
+.project-link:hover { text-decoration: underline; }
+
+/* ── DEMO SECTION ──────────────────────────────────────────── */
+.demo-section {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.demo-header {
+  padding: 20px 28px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.demo-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.demo-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+}
+
+.demo-dot:nth-child(1) { background: #FF5F57; }
+.demo-dot:nth-child(2) { background: #FEBC2E; }
+.demo-dot:nth-child(3) { background: #28C840; }
+
+.demo-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+
+.demo-body {
+  padding: 28px;
+}
+
+.demo-placeholder {
+  background: var(--cream);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-md);
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.demo-placeholder-icon { font-size: 40px; }
+
+.demo-placeholder h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.demo-placeholder p {
+  font-size: 13px;
+  color: var(--ink-muted);
+  max-width: 320px;
+}
+
+.demo-placeholder code {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  padding: 4px 10px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--accent);
+}
+
+/* ── PUBLICATIONS ──────────────────────────────────────────── */
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pub-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: start;
+  transition: box-shadow 0.2s;
+}
+
+.pub-card:hover { box-shadow: var(--shadow-md); }
+
+.pub-year {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent);
+  padding-top: 3px;
+  white-space: nowrap;
+}
+
+.pub-venue {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--accent);
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  font-family: 'DM Mono', monospace;
+}
+
+.pub-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.pub-authors {
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.pub-authors strong { color: var(--ink-soft); font-weight: 600; }
+
+.pub-doi {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.pub-doi:hover { text-decoration: underline; }
+
+/* ── EXPERIENCE ────────────────────────────────────────────── */
+.exp-timeline {
+  position: relative;
+  padding-left: 24px;
+}
+
+.exp-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px; bottom: 8px;
+  width: 1px;
+  background: var(--border);
+}
+
+.exp-item {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.exp-item:last-child { padding-bottom: 0; }
+
+.exp-dot {
+  position: absolute;
+  left: -28px;
+  top: 6px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--cream);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.exp-date {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--ink-muted);
+  margin-bottom: 6px;
+}
+
+.exp-role {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.exp-company {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.exp-desc {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.exp-tag {
+  font-size: 10px;
+  font-family: 'DM Mono', monospace;
+  padding: 2px 7px;
+  background: var(--accent-light);
+  border: 1px solid rgba(27,79,216,0.15);
+  border-radius: 3px;
+  color: var(--accent);
+}
+
+/* ── CONTACT ───────────────────────────────────────────────── */
+.contact-section {
+  background: var(--ink);
+  border-radius: var(--radius-lg);
+  padding: 60px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 240px; height: 240px;
+  border-radius: 50%;
+  background: rgba(27,79,216,0.15);
+  pointer-events: none;
+}
+
+.contact-section::after {
+  content: '';
+  position: absolute;
+  bottom: -40px; left: -40px;
+  width: 160px; height: 160px;
+  border-radius: 50%;
+  background: rgba(13,123,107,0.12);
+  pointer-events: none;
+}
+
+.contact-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.45);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.contact-section h2 {
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.contact-link-primary {
+  background: var(--white);
+  color: var(--ink);
+}
+
+.contact-link-primary:hover {
+  background: var(--cream);
+  transform: translateY(-1px);
+}
+
+.contact-link-secondary {
+  background: rgba(255,255,255,0.08);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.contact-link-secondary:hover {
+  background: rgba(255,255,255,0.14);
+  transform: translateY(-1px);
+}
+
+.contact-detail {
+  margin-top: 28px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  position: relative;
+  z-index: 1;
+}
+
+.contact-detail a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+
+.contact-detail a:hover { color: white; }
+
+/* ── FOOTER ────────────────────────────────────────────────── */
+footer {
+  text-align: center;
+  padding: 40px 24px;
+  font-size: 12px;
+  color: var(--ink-faint);
+  font-family: 'DM Mono', monospace;
+}
+
+/* ── ANIMATIONS ────────────────────────────────────────────── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children */
+.fade-in:nth-child(1) { transition-delay: 0s; }
+.fade-in:nth-child(2) { transition-delay: 0.08s; }
+.fade-in:nth-child(3) { transition-delay: 0.16s; }
+.fade-in:nth-child(4) { transition-delay: 0.24s; }
+.fade-in:nth-child(5) { transition-delay: 0.32s; }
+.fade-in:nth-child(6) { transition-delay: 0.40s; }
+.fade-in:nth-child(7) { transition-delay: 0.48s; }
+.fade-in:nth-child(8) { transition-delay: 0.56s; }
+
+/* ── RESPONSIVE ────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-photo-wrap { order: -1; }
+  .hero-photo-placeholder, .hero-photo { width: 100px; height: 155px; }
+  .about-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .pub-card { grid-template-columns: 1fr; }
+  .contact-section { padding: 40px 24px; }
+  .nav-links { gap: 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAVIGATION ─────────────────────────────────────────── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Islam Fadl</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── HERO ───────────────────────────────────────────────── -->
+<div id="hero" class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Ingolstadt, Germany</div>
+      <h1>Senior CV /<br><em>Robotics Perception</em><br>Engineer</h1>
+      <p class="hero-tagline">
+        AI researcher and Perception engineer with 5+ years
+        of experience in deep learning, image processing and
+        multimodal computer vision systems (e.g. stereo cameras,
+        lidars ...etc). My expertise spans sensor integration,
+        anomaly inspection, Edge AI (Nvidia hardware), autonomous
+        shuttles, and robotics. MSc in Control, Microsystems 
+        and Microelectronics.
+      </p>
+      <div class="hero-badges">
+        <span class="badge"><span class="badge-dot blue"></span> VISAPP 2025 Published</span>
+        <span class="badge"><span class="badge-dot orange"></span> MuFoRa Dataset</span>
+        <span class="badge"><span class="badge-dot"></span> German B2</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          View Projects
+        </a>
+
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <!-- Replace src with your actual photo URL -->
+      <img src="photo.jpg" alt="Islam Fadl" class="hero-photo">
+        <div class="photo-label"><br></div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- ── ABOUT ──────────────────────────────────────────────── -->
+<section id="about">
+  <div class="section-label">Background</div>
+  <p class="section-intro">
+    Background spanning engineering multiple datasets
+    for services and research, inclding a multimodal dataset
+    of traffic elements consisting of LiDAR point clouds and 
+    stereo images under sever weather conditions,
+    training and fine-tuning models, sensor integration 
+    UR5 robotic arm manipulation, anomaly inspection
+    and detection on metal sheets, autonomous shuttles, and 
+    Edge AI deployment on NVIDIA Jetson platforms.
+  </p>
+
+  <div class="about-grid">
+    <div class="about-card fade-in">
+      <div class="about-card-icon">🤖</div>
+      <h3>Robotics Perception</h3>
+      <p>LiDAR + stereo RGB fusion, extrinsic calibration, time synchronisation across heterogeneous sensors. Validated multimodal pipelines before deployment.</p>
+    </div>
+    <div class="about-card fade-in">
+      <div class="about-card-icon"></div>
+      <h3>Edge AI Deployment</h3>
+      <p>TensorRT INT8/FP16 quantisation on NVIDIA Jetson Nano. >30 FPS real-time inference under hard latency budgets. ROS2 integration in C++ and Python.</p>
+    </div>
+    <div class="about-card fade-in">
+      <div class="about-card-icon"></div>
+      <h3>Research & Datasets</h3>
+      <p>Created MuFoRa — 55,000 synchronised stereo RGB + LiDAR frames under measured adverse weather. Published at VISAPP 2025. Benchmark for external research teams.</p>
+    </div>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-group fade-in">
+      <div class="skill-group-title">Robotics</div>
+      <div class="skill-tags">
+        <span class="skill-tag">ROS2</span>
+        <span class="skill-tag">EKF / SLAM</span>
+        <span class="skill-tag">Sensor Fusion</span>
+        <span class="skill-tag">PCL</span>
+        <span class="skill-tag">Open3D</span>
+        <span class="skill-tag">CARLA</span>
+      </div>
+    </div>
+    <div class="skill-group fade-in">
+      <div class="skill-group-title">ML / CV</div>
+      <div class="skill-tags">
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">Hugging Face</span>
+        <span class="skill-tag">OpenCV</span>
+        <span class="skill-tag">DETR</span>
+        <span class="skill-tag">DINOv2</span>
+        <span class="skill-tag">YOLO</span>
+        <span class="skill-tag">Segformer</span>
+      </div>
+    </div>
+    <div class="skill-group fade-in">
+      <div class="skill-group-title">Edge & Deploy</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Jetson Orin</span>
+        <span class="skill-tag">TensorRT</span>
+        <span class="skill-tag">ONNX</span>
+        <span class="skill-tag">DeepStream</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">GCP</span>
+      </div>
+    </div>
+    <div class="skill-group fade-in">
+      <div class="skill-group-title">Languages</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">CMake</span>
+        <span class="skill-tag">MATLAB</span>
+        <span class="skill-tag">Linux</span>
+      </div>
+    </div>
+    <div class="skill-group fade-in">
+      <div class="skill-group-title">Control</div>
+      <div class="skill-tags">
+        <span class="skill-tag">MPC</span>
+        <span class="skill-tag">LQR</span>
+        <span class="skill-tag">PID</span>
+        <span class="skill-tag">State-space</span>
+      </div>
+    </div>
+    <div class="skill-group fade-in">
+      <div class="skill-group-title">Languages</div>
+      <div class="skill-tags">
+        <span class="skill-tag">German B2</span>
+        <span class="skill-tag">English C1</span>
+        <span class="skill-tag">Arabic Native</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ── PROJECTS ───────────────────────────────────────────── -->
+<section id="projects">
+  <div class="section-label">Open Source</div>
+  <h2>Robotics & perception<br>projects</h2>
+  <p class="section-intro">
+    Production-quality repositories covering the full robotics perception stack.
+    Built to close real knowledge gaps and demonstrate what I can ship.
+  </p>
+
+  <div class="projects-grid">
+    <a href="https://github.com/IslamFadl/pytorch-fundamentals" class="project-card fade-in" target="_blank">
+      <div class="project-status status-shipped">✓ Shipped — May 2026</div>
+      <h3>PyTorch Fundamentals for Robotics</h3>
+      <p>Clean training infrastructure: DataLoader benchmarks (1.9× speedup), correct train/eval/no_grad patterns, fine-tuning with layer-wise LR decay, custom Dice + Weighted CE losses, NaNGuard for production training.</p>
+      <div class="project-tags">
+        <span class="project-tag">PyTorch</span>
+        <span class="project-tag">Training</span>
+        <span class="project-tag">Fine-tuning</span>
+        <span class="project-tag">Edge AI</span>
+      </div>
+      <span class="project-link">View on GitHub →</span>
+    </a>
+
+   
+    <a href="https://github.com/IslamFadl/camera-calibration" class="project-card fade-in" target="_blank">
+      <div class="project-status status-shipped">✓ Shipped — June 2026</div>
+      <h3>Camera Calibration & Multi-View Geometry</h3>
+      <p>Checkerboard calibration with reprojection error visualisation, undistortion pipeline, SIFT + Lowe's ratio test + RANSAC homography, image stitching demo. Intrinsic matrix math.</p>
+      <div class="project-tags">
+        <span class="project-tag">OpenCV</span>
+        <span class="project-tag">Calibration</span>
+        <span class="project-tag">SIFT</span>
+        <span class="project-tag">RANSAC</span>
+      </div>
+      <span class="project-link">View on GitHub →</span>
+    </a>
+
+    <div class="project-card fade-in">
+      <div class="project-status status-progress">🟢 In Progress - June 2026</div>
+      <h3>DETR Fine-tuning with Layer-wise LR</h3>
+      <p>Hugging Face DETR on custom data, progressive unfreezing, layer-wise LR decay, mAP@50 / mAP@50-95 evaluation with torchmetrics, ONNX export.</p>
+      <div class="project-tags">
+        <span class="project-tag">DETR</span>
+        <span class="project-tag">Hugging Face</span>
+        <span class="project-tag">mAP</span>
+        <span class="project-tag">ONNX</span>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-status status-queued">⏳ Queued — July 2026</div>
+      <h3>3D Scene Understanding Pipeline</h3>
+      <p>Monocular depth (Depth Anything v2), stereo depth from calibrated cameras, point cloud generation, Open3D visualisation.</p>
+      <div class="project-tags">
+        <span class="project-tag">3D CV</span>
+        <span class="project-tag">Depth</span>
+        <span class="project-tag">Open3D</span>
+        <span class="project-tag">Stereo</span>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-status status-queued">⏳ Queued — July 2026</div>
+      <h3>EKF Sensor Fusion — LiDAR + Camera + IMU</h3>
+      <p>Full EKF derivation in markdown, LiDAR-camera projection with proper extrinsics, multi-sensor fusion for object detection. Every equation written and explained from first principles.</p>
+      <div class="project-tags">
+        <span class="project-tag">EKF</span>
+        <span class="project-tag">LiDAR</span>
+        <span class="project-tag">Sensor Fusion</span>
+        <span class="project-tag">ROS2</span>
+      </div>
+    </div>
+
+    <div class="project-card flagship fade-in">
+      <div class="project-status status-flagship">🏆 Flagship — August 2026</div>
+      <h3>Industrial Anomaly Detection on MVTec AD</h3>
+      <p>PatchCore + EfficientAD on all 15 MVTec categories, DINOv2 backbone experiment, full AUROC table, pixel-level anomaly heatmap demo.</p>
+      <div class="project-tags">
+        <span class="project-tag">MVTec AD</span>
+        <span class="project-tag">PatchCore</span>
+        <span class="project-tag">DINOv2</span>
+        <span class="project-tag">AUROC</span>
+      </div>
+    </div>
+
+    <div class="project-card flagship fade-in" style="grid-column: 1 / -1;">
+      <div class="project-status status-flagship">🏆 Flagship — August 2026</div>
+      <h3>MPC + Perception for Mobile Robot Navigation</h3>
+      <p>Perception (DeTr/Yolo obstacle detection + drivable area segmentation) feeds a Model Predictive Controller that computes obstacle-aware trajectories in simulation (Gazebo). Cost function combines reference tracking, perception-detected obstacle avoidance, and control smoothness. 2-minute demo video. A combination of classical control and modern deep learning.</p>
+      <div class="project-tags">
+        <span class="project-tag">MPC</span>
+        <span class="project-tag">Perception</span>
+        <span class="project-tag">ROS2</span>
+        <span class="project-tag">Webots</span>
+        <span class="project-tag">Control Theory</span>
+        <span class="project-tag">YOLO</span>
+      </div>
+    </div>
+  </div>
+
+
+<div class="section-divider"></div>
+
+<!-- ── PUBLICATIONS ───────────────────────────────────────── -->
+<section id="publications">
+  <div class="section-label">Research</div>
+  <h2>Published work</h2>
+  <p class="section-intro">
+    Peer-reviewed contributions to computer vision and autonomous perception research.
+  </p>
+
+  <div class="pub-list">
+    <div class="pub-card fade-in">
+      <div class="pub-year">2025</div>
+      <div>
+        <span class="pub-venue">VISAPP 2025</span>
+        <div class="pub-title">Environment Setup and Model Benchmark of the MuFoRa Dataset</div>
+        <div class="pub-authors"><strong>Fadl, I.</strong>, Schön, T., Behret, V., Brandmeier, T., Palme, F., & Helmer, T.</div>
+        <a href="https://doi.org/10.5220/0013307900003912" class="pub-doi" target="_blank">doi.org/10.5220/0013307900003912 →</a>
+      </div>
+    </div>
+
+    <div class="pub-card fade-in">
+      <div class="pub-year">2025</div>
+      <div>
+        <span class="pub-venue">VISAPP 2025</span>
+        <div class="pub-title">Sensor Calibration and Data Analysis of the MuFoRa Dataset</div>
+        <div class="pub-authors">Behret, V., Kushtanova, R., <strong>Fadl, I.</strong>, Weber, S., Helmer, T., & Palme, F.</div>
+        <a href="https://doi.org/10.5220/0013310400003912" class="pub-doi" target="_blank">doi.org/10.5220/0013310400003912 →</a>
+      </div>
+    </div>
+
+    <div class="pub-card fade-in">
+      <div class="pub-year">2017</div>
+      <div>
+        <span class="pub-venue">Conference 2017</span>
+        <div class="pub-title">A Critical Comparison Between Fast and Hector SLAM Algorithms</div>
+        <div class="pub-authors">Adham, A.*, Eliwa, M.*, <strong>Fadl, I.*</strong>, Eldeeb, M.* &nbsp;·&nbsp; *Equal contribution</div>
+        <span style="font-size:12px;color:var(--ink-muted);">6th International Conference on Mathematics and Information Science · ISSN: 2455-4537</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ── EXPERIENCE ─────────────────────────────────────────── -->
+<section id="experience">
+  <div class="section-label">Career</div>
+  <h2>Professional experience</h2>
+
+  <div class="exp-timeline">
+
+    <div class="exp-item fade-in">
+      <div class="exp-dot"></div>
+      <div class="exp-date">Sep 2025 — Present</div>
+      <div class="exp-role">Senior Computer Vision Engineer (Contract)</div>
+      <div class="exp-company">Freelance</div>
+      <div class="exp-desc">
+        
+      <div class="exp-tags">
+        <span class="exp-tag">YOLO</span><span class="exp-tag">Segmentation</span><span class="exp-tag">Deployment</span>
+      </div>
+    </div>
+
+    <div class="exp-item fade-in">
+      <div class="exp-dot"></div>
+      <div class="exp-date">Sep 2023 — Aug 2025</div>
+      <div class="exp-role">Robotics Perception Engineer / Research Associate</div>
+      <div class="exp-company">CARISSMA — Institute of Automated Driving, THI Ingolstadt</div>
+      <div class="exp-desc"><div class="exp-tags">
+        <span class="exp-tag">Autonomous Driving</span><span class="exp-tag">LiDAR</span><span class="exp-tag">ROS2</span><span class="exp-tag">CARLA</span><span class="exp-tag">Jetson</span>
+      </div>
+    </div>
+
+    <div class="exp-item fade-in">
+      <div class="exp-dot"></div>
+      <div class="exp-date">Jan 2021 — May 2023</div>
+      <div class="exp-role">Robotics Perception Engineer / Software Developer</div>
+      <div class="exp-company">BIBA — Bremer Institut für Produktion und Logistik</div>
+      <div class="exp-desc"><div class="exp-tags">
+        <span class="exp-tag">Robotics</span><span class="exp-tag">TensorRT</span><span class="exp-tag">Jetson Nano</span><span class="exp-tag">C++</span>
+      </div>
+    </div>
+
+    <div class="exp-item fade-in">
+      <div class="exp-dot"></div>
+      <div class="exp-date">Jan 2020 — Dec 2020</div>
+      <div class="exp-role">Robotics Research Assistant</div>
+      <div class="exp-company">DFKI — German Research Center for Artificial Intelligence</div>
+      <div class="exp-desc"><div class="exp-tags">
+        <span class="exp-tag">DFKI</span><span class="exp-tag">ROS</span><span class="exp-tag">UR5</span><span class="exp-tag">Motion Planning</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ── CONTACT ────────────────────────────────────────────── -->
+<section id="contact" style="padding-bottom: 60px;">
+  <div class="contact-section">
+    <div class="contact-label">Get in touch</div>
+    <h2>Open to Computer Vision and Robotics<br>Perception roles</h2>
+    <p class="contact-subtitle">
+      DACH<br>
+    </p>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/islamfadl" class="contact-link contact-link-primary" target="_blank">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/IslamFadl" class="contact-link contact-link-secondary" target="_blank">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a href="mailto:islam.s.fadl@gmail.com" class="contact-link contact-link-secondary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email
+      </a>
+    </div>
+    <div class="contact-detail">
+      islam.s.fadl@gmail.com &nbsp;·&nbsp; +49 176 878 50862 &nbsp;·&nbsp;
+      </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer>
+  Islam Fadl · Ingolstadt, Germany · Hosted on GitHub Pages
+</footer>
+
+<!-- ── SCROLL ANIMATIONS ──────────────────────────────────── -->
+<script>
+// Smooth active nav highlighting
+const sections = document.querySelectorAll('section, #hero');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + entry.target.id) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+
+sections.forEach(s => observer.observe(s));
+
+// Fade-in on scroll
+const fadeEls = document.querySelectorAll('.fade-in');
+const fadeObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      fadeObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+fadeEls.forEach(el => fadeObserver.observe(el));
+
+// Trigger visible for elements already in viewport
+setTimeout(() => {
+  fadeEls.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      el.classList.add('visible');
+    }
+  });
+}, 100);
+</script>
+
+</body>
+</html>
